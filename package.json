@@ -19,6 +19,9 @@
     "react-router-dom": "^6.8.1",
     "zod": "^3.20.2"
   },
+  "engines": {
+    "node": "18.14.0"
+  },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
