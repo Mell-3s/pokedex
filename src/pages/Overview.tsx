@@ -13,11 +13,11 @@ function Overview() {
         placeholder="Pokemon zoeken"
         value={search}
         onChange={(event) => setSearch(event.target.value)}
-        className="w-full rounded bg-blue-50 p-2"
+        className="mb-2 w-full rounded bg-blue-50 p-2"
       />
 
       {isLoading && <p>Loading...</p>}
-      {!pokemon?.length && <p>Can&apos;t find any pokemon</p>}
+      {!pokemon?.length && !isLoading && <p>Can&apos;t find any pokemon</p>}
       {pokemon?.map((p) => (
         <Card pokemon={p} key={p.id} />
       ))}
